@@ -1,0 +1,186 @@
+section {
+    display: flex;
+    width: 100%;
+    height: 430px; 
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: .8;
+    filter: contrast(120%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed';
+}
+nav img {
+    width: 100%;
+    height: 90vh;
+}
+
+.text-h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #30b6e5;
+}
+
+.list_card {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-left: 45px;
+    list-style: none;
+    margin-bottom: 1vw;
+  }
+.tourism-card-1 {
+    width: 75%;
+    border: 1px solid #ddd;
+    background-image: url(../assets/bariloche/bar-2.jpg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 1s ease;
+    height: auto;
+  }
+
+.tourism-card-2 {
+    width: 75%;
+    border: 1px solid #ddd;
+    background-image: url(../assets/buenosaires/bsas-2.jpg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 1s ease;
+    height: auto;
+  }
+
+.tourism-card-3 {
+    width: 75%;
+    border: 1px solid #ddd;
+    background-image: url(../assets/cordoba/cor-2.jpg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 1s ease;
+    height: auto;
+  }
+
+.tourism-card-4 {
+    width: 75%;
+    border: 1px solid #ddd;
+    background-image: url(../assets/salta/sal-2.jpg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 1s ease;
+    height: auto;
+}
+  
+  .tourism-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 55px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 3px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #133;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #FFF;
+  }
+  
+  .card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 65%;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+
+
+  /* Navbar */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #719c9b;
+  }
+  
+  nav li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

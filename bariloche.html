@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/bariloche.css">
+    <link rel="stylesheet" href="./styles/images-H.css">
+    <title>Bariloche</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="/index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Destinos</a>
+              <div class="dropdown-content">
+                <a href="./bariloche.html">Bariloche</a>
+                <a href="./buenosaires.html">Buenos Aires</a>
+                <a href="./cordoba.html">Cordoba</a>
+                <a href="./salta.html">Salta</a>
+              </div>
+            </li>
+            <li><a href="./form.html">Viaja con nosotros!</a></li>
+            
+          </ul>
+        <img src="./assets/argentina.jpg" alt="">
+    </nav>
+    <section>
+        <img src="../assets/bariloche/bar-1.jpg" alt="">
+        <img src="../assets/bariloche/bar-2.jpg" alt="">
+        <img src="../assets/bariloche/bar-3.jpg" alt="">
+        <img src="../assets/bariloche/bar-4.jpg" alt="">
+        <img src="../assets/bariloche/bar-5.jpg" alt="">
+        <img src="../assets/bariloche/bar-6.jpg" alt="">
+        <img src="../assets/bariloche/bar-7.jpg" alt="">
+        <img src="../assets/bariloche/bar-8.jpg" alt="">
+        <img src="../assets/bariloche/bar-9.jpg" alt="">
+        <img src="../assets/bariloche/bar-10.jpg" alt="">
+    </section>
+
+    <article>
+        <div class="container">
+            <h1>
+                Bariloche
+            </h1>
+            <aside>
+                <p>
+                    San Carlos de Bariloche, conocida simplemente como Bariloche, es una ciudad patagónica, la cabecera del departamento
+                    de Bariloche y la más poblada de la provincia de Río Negro.
+                    <br> <br>
+                    Bariloche es el destino más visitado de la Patagonia y uno de los destinos más visitados de la Argentina. Recibe
+                    alrededor de un millón de turistas anualmente, principalmente en temporada invernal, entre los que se destacan por su
+                    afluencia los provenientes de países de Europa y América. Es conocida por ser el destino principal del viaje de
+                    egresados secundarios en Argentina y Uruguay.
+                    <br> <br>
+                    Es la ciudad argentina más poblada de los Andes Patagónicos. Está ubicada en el parque nacional Nahuel Huapi, en el
+                    suroeste de la provincia de Neuquén, junto a la cordillera de los Andes, en la ribera sur del lago Nahuel Huapi, a 832
+                    km de Viedma, la capital de la provincia. 
+                    <br> <br>
+                    Sus reservas naturales, que incluyen lagos, bosques y montañas, y sus destacados centros de esquí son el principal
+                    atractivo. La ciudad ha sido considerada por algunas fuentes como el segundo destino de esquí a nivel mundial y el más
+                    grande de América del Sur. Está además en una zona donde se puede observar y estudiar al cóndor andino.
+                    <br> <br>
+                    Es considerada como la segunda ciudad de mejor calidad de vida de la Argentina, tanto por su entorno natural, su
+                    diversidad de actividades económicas dinámicas y su seguridad.
+                    <br> <br>
+                    Bariloche es además uno de los polos científicos y tecnológicos más importantes de América, encontrándose INVAP,
+                    empresa provincial de alta tecnología que diseña y construye reactores nucleares, radares y satélites, entre otros.
+                </p>
+            </aside>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96169.0483873069!2d-71.33991449999999!3d-41.12835284999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sSan%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1734438685460!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </article>
+
+    <script>
+        // Cargar el navbar desde navbar.html
+        fetch('../navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          })
+          .catch(error => console.error('Error al cargar el navbar:', error));
+      </script>
+</body>
+</html>

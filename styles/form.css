@@ -1,0 +1,77 @@
+body {
+    background-color: #6b686b;
+    font-family: 'Roboto Condensed';
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 2px 2px 9px -1px #362b32;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  
+  button {
+    font-family: inherit;
+    background-color: #ffffff;
+    border-color: #3d373b;
+    border-radius: 4px;
+    padding: 6px 14px;
+  }
+  
+  .texto-consulta {
+    display: block;
+  }
+  
+  .botones {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .donde-enviar-info {
+    margin: 15px 0px;
+  }
+  
+  .form-control-inline {
+    display: flex;
+    margin-bottom: 0rem;
+  }
+  
+  .form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .form-control-inline- {
+    display: flex;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .form-control-inline- input {
+    width: auto;
+    margin-top: 0.5rem;
+  }
+  
+  .botones :hover {
+    background-color: #a3959d;
+  }
+  

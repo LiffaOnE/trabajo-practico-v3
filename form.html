@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles/form.css">
+  <script src="./js/form.js"></script>
+  <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+  <title>Validación de Formulario</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="./index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Destinos</a>
+              <div class="dropdown-content">
+                <a href="./bariloche.html">Bariloche</a>
+                <a href="./buenosaires.html">Buenos Aires</a>
+                <a href="./cordoba.html">Cordoba</a>
+                <a href="./salta.html">Salta</a>
+              </div>
+            </li>
+            <li><a href="./form.html">Viaja con nosotros!</a></li>
+          </ul>
+    </nav>
+  <h2>Formulario de Viaje!</h2>
+  <form id="miFormulario">
+    <!-- Input con validación -->
+    <label for="nombre">Nombre:</label>
+    <input 
+    type="text"
+    id="nombre" 
+    name="nombre" 
+    placeholder="Ingresa tu nombre" 
+    required>
+
+    <label for="edad">Edad</label>
+    <input
+      id="edad"
+      name="edad"
+      type="number"
+      placeholder="Ingrese su edad"
+    />
+    <br><br>
+    <label for="telefono">Número de teléfono </label>
+      <input
+        type="tel"
+        name="telefono"
+        id="telefono"
+        placeholder="Ingresa tu número (7-10 dígitos)"
+        required
+        min="7"
+        max="10"
+      />
+      <br> <br>
+
+
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        placeholder="Ingrese su email"
+      />
+      <label for="fecha-nacimiento">Fecha de nacimiento</label>
+      <input
+        id="fecha-nacimiento"
+        name="fecha-nacimiento"
+        type="date"
+        placeholder="Ingrese fecha de nacimiento"
+        min="1910-01-01"
+      />
+      <br /> <br />
+      <label for="fecha-ida">Fecha de ida</label>
+      <input
+        id="fecha-ida"
+        name="fecha-ida"
+        type="date"
+        placeholder="Ingrese fecha de ida"
+        min="2024-12-17"
+        required
+      />
+      <label for="fecha-vuelta">Fecha de vuelta</label>
+      <input
+        id="fecha-vuelta"
+        name="fecha-vuelta"
+        type="date"
+        placeholder="Ingrese fecha de vuelta"
+        min="2024-12-17"
+        required
+      />
+      <br />
+    
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
